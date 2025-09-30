@@ -2,8 +2,8 @@
   "card": {
     "director": "Director",
     "producer": "Producer",
-    "score": "Score",
-    "see-more-details": "See more details"
+    "view-image": "View Image",
+    "share-resource": "Share Resource"
   },
   "footer": {
     "power-by": "Powered by",

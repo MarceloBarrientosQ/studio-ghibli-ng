@@ -17,8 +17,12 @@
   </mat-card-content>
 
   <mat-card-actions>
-    <a mat-button color="primary" [href]="film().url" target="_blank">
-      {{ 'card.see-more-details' | translate }}
-    </a>
+    <button mat-button color="accent" (click)="openImageInNewTab()">
+      {{ 'card.view-image' | translate }}
+    </button>
+
+    <button mat-button color="warn" (click)="shareFilmUrl()">
+      {{ 'card.share-resource' | translate }}
+    </button>
   </mat-card-actions>
 </mat-card>
