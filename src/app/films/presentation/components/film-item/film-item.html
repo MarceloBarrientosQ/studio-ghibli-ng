@@ -1,0 +1,24 @@
+<mat-card class="film-card">
+  <img mat-card-image [alt]="film().title" [src]="film().image" />
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ film().title }}</mat-card-title>
+      <mat-card-subtitle>
+        {{ film().releaseDate }}
+      </mat-card-subtitle>
+    </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>{{ film().description }}</p>
+    <p><strong>{{ 'card.director' | translate }}:</strong> {{ film().director }}</p>
+    <p><strong>{{ 'card.producer' | translate }}:</strong> {{ film().producer }}</p>
+    <p><strong>{{ 'card.score' | translate }}:</strong> {{ film().rtScore }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <a mat-button color="primary" [href]="film().url" target="_blank">
+      {{ 'card.see-more-details' | translate }}
+    </a>
+  </mat-card-actions>
+</mat-card>

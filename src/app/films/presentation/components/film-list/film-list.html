@@ -1,0 +1,5 @@
+<div class="film-list">
+  @for (film of films(); track film.title) {
+    <app-film-item [film]="film" class="film-item"></app-film-item>
+  }
+</div>

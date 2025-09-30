@@ -1,0 +1,12 @@
+{
+  "card": {
+    "director": "Director",
+    "producer": "Productor",
+    "score": "Puntuación",
+    "see-more-details": "Ver más detalles"
+  },
+  "footer": {
+    "power-by": "Desarrollado por",
+    "with-code": "con código"
+  }
+}

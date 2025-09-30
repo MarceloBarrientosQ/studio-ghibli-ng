@@ -1,0 +1,22 @@
+<div class="app-container">
+
+  <header class="app-header">
+    <div class="header-left">
+
+      <img src="https://logo.clearbit.com/studio-ghibli.com" alt="Studio Ghibli Logo" class="logo">
+      <span class="title">Studio Ghibli Films</span>
+    </div>
+
+    <div class="header-right">
+      <app-language-switcher></app-language-switcher>
+    </div>
+  </header>
+
+
+  <main class="app-body">
+    <h1>Studio Ghibli</h1>
+    <app-film-list [films]="store.films()"></app-film-list>
+  </main>
+
+  <app-footer></app-footer>
+</div>
