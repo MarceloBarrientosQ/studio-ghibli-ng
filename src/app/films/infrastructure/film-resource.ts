@@ -1,3 +1,10 @@
+// Si me llega el json como un objeto contenedor entonces:
+
+// interface FilmResourceContainer {
+//   films: FilmResource[];
+// }
+
+// Si me llega el json como un array de objetos entonces:
 export interface FilmResource {
   id: string;
   title: string;

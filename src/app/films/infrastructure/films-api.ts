@@ -21,4 +21,14 @@ export class FilmsApi {
         map(resource => FilmAssembler.toEntitiesFromResponse(resource))
       );
   }
+
+  /*
+  getFilms(): Observable<Film[]> {
+    return this.http.get<FilmResourceContainer>(`${this.baseUrl}${this.filmsEndpointPath}`)
+      .pipe(
+        map(resource => FilmAssembler.toEntitiesFromResponse(resource))
+      );
+  }
+  */
+
 }
